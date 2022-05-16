@@ -31,6 +31,7 @@
   --color-light: #23232a;
   --color-gray-light: #ddd;
   --color-gray-dark: #adacb5;
+  --color-dark: #f0eff5;
 }
 
 *{
@@ -71,7 +72,7 @@ h4 {
   font-size: 1rem;
 }
 h5 {
-  font-size: 0.86rem;
+  font-size: 1rem;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -110,7 +111,7 @@ small{
   box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
 }
 .bg-sucess{
-  background: var(--color-sucess);
+  background: var(--color-success);
   box-shadow: 0 0.8rem 0.8rem var(--color-sucess-light);
 }
 .bg-danger{
@@ -618,7 +619,7 @@ main .recent-transactions .card-details .card{
 
 
 /* MEDIA QUERIES FOR TABLES */
-@media screen and(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     nav .search-bar{
       display:none;
     }
@@ -626,7 +627,7 @@ main .recent-transactions .card-details .card{
       gap:2rem;
     }
     nav .profile-area button#menu-btn{
-      display:inline;
+      display: inline;
       background: transparent;
       color: var(--color-dark);
     }
@@ -653,7 +654,7 @@ main .recent-transactions .card-details .card{
       }
     }
 
-    main aside button#clode-btn{
+    main aside button#close-btn{
       display: inline-block;
       width:3rem;
       height: 3rem;
@@ -692,7 +693,7 @@ main .recent-transactions .card-details .card{
 
 /* MEDIA QUERIES FOR MOBILE PHONES */
 
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
     nav .profile-area{
       gap: 2.6rem;
     }
@@ -701,7 +702,7 @@ main .recent-transactions .card-details .card{
       display:none;
     }
 
-    main .selection.middle .cards{
+    main section.middle .cards{
       grid-template-columns: 1fr;
     }
 
